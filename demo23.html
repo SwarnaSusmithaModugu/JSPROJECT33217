@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>DEMO 23</title>
+    <script>
+      function demo1() {
+        document.writeln("I am in DEMO-1 </br>");
+        {
+          var a = 10;
+          document.writeln("Inside the Block </br>");
+          document.writeln("a = " + a + "</br>");
+        }
+        document.writeln("a = " + a + "</br>");
+      }
+      function demo2() {
+        document.writeln("I am in DEMO-2 </br>");
+        {
+          let a = 10;
+          document.writeln("Inside the Block </br>");
+          document.writeln("a = " + a + "</br>");
+        }
+        document.writeln("a = " + a + "</br>"); //will not display anything as let is a block scope and a will show undefined in the console
+      }
+      function demo3() {
+        document.writeln("I am in DEMO-3 </br>");
+        {
+          const a = 10;
+          //a=20 re-assignment is not possible for const and const is similar to let
+          document.writeln("Inside the Block </br>");
+          document.writeln("a = " + a + "</br>");
+        }
+        document.writeln("a = " + a + "</br>"); //will not display anything as const is a block scope and a will show undefined in the console
+      }
+      //demo1();
+      //demo2();
+      demo3();
+    </script>
+  </head>
+  <body></body>
+</html>
